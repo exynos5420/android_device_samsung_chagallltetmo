@@ -39,6 +39,13 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/android0/f_mass_storag
 # Audio
 BOARD_USES_LIBMEDIA_WITH_AUDIOPARAMETER := true
 
+# RIL
+BOARD_PROVIDES_LIBRIL := true
+# hardware/samsung/ril
+BOARD_MODEM_TYPE := xmm7260
+# RIL.java overwrite
+BOARD_RIL_CLASS := ../../../$(LOCAL_PATH)/ril
+
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
@@ -168,6 +175,7 @@ BOARD_SEPOLICY_UNION += \
 	system_server.te \
 	sswap.te \
 	vold.te \
+	rild.te \
 	wpa.te
 
 # SurfaceFlinger
