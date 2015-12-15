@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/samsung/chagallwifi
+LOCAL_PATH := device/samsung/chagalllte
 
 # Platform
 BOARD_VENDOR := samsung
@@ -58,10 +58,10 @@ COMMON_GLOBAL_CFLAGS += -DFORCE_SCREENSHOT_CPU_PATH
 # Kernel
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
-TARGET_KERNEL_CONFIG := cyanogenmod_deathly_chagallwifi_defconfig
+TARGET_KERNEL_CONFIG := cyanogenmod_deathly_chagalllte_defconfig
 TARGET_KERNEL_SOURCE := kernel/samsung/klimtwifi
 TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.8
-#TARGET_PREBUILT_KERNEL := device/samsung/chagallwifi/kernel
+#TARGET_PREBUILT_KERNEL := device/samsung/chagalllte/kernel
 
 # Charging mode
 BOARD_CHARGER_ENABLE_SUSPEND := true
@@ -70,7 +70,7 @@ BOARD_CHARGING_MODE_BOOTING_LPM := /sys/class/power_supply/battery/batt_lp_charg
 BOARD_BATTERY_DEVICE_NAME := battery
 
 # Bootloader
-TARGET_OTA_ASSERT_DEVICE := chagallwifi
+TARGET_OTA_ASSERT_DEVICE := chagalllte
 TARGET_BOOTLOADER_BOARD_NAME := universal5420
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
@@ -93,7 +93,7 @@ BOARD_USES_HWC_SERVICES := true
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 
 # Hardware
-#BOARD_HARDWARE_CLASS += device/samsung/chagallwifi/cmhw
+#BOARD_HARDWARE_CLASS += device/samsung/chagalllte/cmhw
 
 # Init
 TARGET_NR_SVC_SUPP_GIDS := 20
@@ -128,7 +128,7 @@ BOARD_FLASH_BLOCK_SIZE := 4096
 BOARD_SYSTEMIMAGE_JOURNAL_SIZE := 0
 
 # PowerHAL
-TARGET_POWERHAL_VARIANT := chagallwifi
+TARGET_POWERHAL_VARIANT := chagalllte
 
 # Recovery
 COMMON_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
@@ -146,7 +146,7 @@ BOARD_USES_SCALER := true
 
 # SELinux
 BOARD_SEPOLICY_DIRS += \
-	device/samsung/chagallwifi/sepolicy
+	device/samsung/chagalllte/sepolicy
 
 BOARD_SEPOLICY_UNION += \
 	file_contexts \
@@ -193,7 +193,7 @@ WIFI_DRIVER_FW_PATH_STA          := "/system/etc/wifi/bcmdhd_sta.bin"
 WIFI_DRIVER_FW_PATH_AP           := "/system/etc/wifi/bcmdhd_apsta.bin"
 
 # custom additions to updater-script
-TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := device/samsung/chagallwifi/releasetools/ota_from_target_files
+TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := device/samsung/chagalllte/releasetools/ota_from_target_files
 
 # inherit from the proprietary version
--include vendor/samsung/chagallwifi/BoardConfigVendor.mk
+-include vendor/samsung/chagalllte/BoardConfigVendor.mk
