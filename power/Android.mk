@@ -14,7 +14,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_POWERHAL_VARIANT),chagalllte)
+ifeq ($(TARGET_POWERHAL_VARIANT),chagallltetmo)
 
 include $(CLEAR_VARS)
 
@@ -26,4 +26,4 @@ LOCAL_MODULE_TAGS := optional
 
 include $(BUILD_SHARED_LIBRARY)
 
-endif # TARGET_POWERHAL_VARIANT == chagalllte
+endif # TARGET_POWERHAL_VARIANT == chagallltetmo

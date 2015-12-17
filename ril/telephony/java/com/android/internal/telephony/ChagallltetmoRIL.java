@@ -44,7 +44,7 @@ import java.io.IOException;
  *
  * {@hide}
  */
-public class ChagalllteRIL extends RIL {
+public class ChagallltetmoRIL extends RIL {
 
     /**********************************************************
      * SAMSUNG REQUESTS
@@ -74,13 +74,13 @@ public class ChagalllteRIL extends RIL {
 
     private final AudioManager mAudioManager;
 
-    public ChagalllteRIL(Context context, int preferredNetworkType, int cdmaSubscription) {
+    public ChagallltetmoRIL(Context context, int preferredNetworkType, int cdmaSubscription) {
         super(context, preferredNetworkType, cdmaSubscription, null);
         mAudioManager = (AudioManager)mContext.getSystemService(Context.AUDIO_SERVICE);
         mQANElements = 6;
     }
 
-    public ChagalllteRIL(Context context, int preferredNetworkType, int cdmaSubscription, Integer instanceId) {
+    public ChagallltetmoRIL(Context context, int preferredNetworkType, int cdmaSubscription, Integer instanceId) {
         super(context, preferredNetworkType, cdmaSubscription, instanceId);
         mAudioManager = (AudioManager)mContext.getSystemService(Context.AUDIO_SERVICE);
         mQANElements = 6;
