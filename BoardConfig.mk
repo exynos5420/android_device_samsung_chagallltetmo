@@ -77,7 +77,7 @@ BOARD_CHARGING_MODE_BOOTING_LPM := /sys/class/power_supply/battery/batt_lp_charg
 BOARD_BATTERY_DEVICE_NAME := battery
 
 # Bootloader
-TARGET_OTA_ASSERT_DEVICE := chagalllte, chagallltetmo
+#TARGET_OTA_ASSERT_DEVICE := chagalllte, chagallltetmo
 TARGET_BOOTLOADER_BOARD_NAME := universal5420
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
