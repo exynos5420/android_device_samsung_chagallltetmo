@@ -4,6 +4,10 @@
         "target_path": "kernel/samsung/klimtwifi"
     },
     {
+        "repository": "android_device_samsung_chagalllte",
+        "target_path": "device/samsung/chagalllte"
+    },
+    {
         "repository": "android_packages_apps_SamsungServiceMode",
         "target_path": "packages/apps/SamsungServiceMode"
     },

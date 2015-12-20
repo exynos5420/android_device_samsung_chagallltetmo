@@ -2,8 +2,6 @@ $(call inherit-product, device/samsung/chagallltetmo/full_chagallltetmo.mk)
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
-
-# Inherit more cyanogenmod stuff.
 $(call inherit-product, vendor/cm/config/telephony.mk)
 
 PRODUCT_NAME := cm_chagallltetmo
