@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/samsung/chagalllte
+LOCAL_PATH := device/samsung/chagallltetmo
 
 # Platform
 BOARD_VENDOR := samsung
@@ -68,8 +68,8 @@ BOARD_CAMERA_BACK_ROTATION=0
 # Kernel
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
-TARGET_KERNEL_CONFIG := cyanogenmod_deathly_chagalllte_defconfig
-TARGET_KERNEL_SOURCE := kernel/samsung/tabs
+TARGET_KERNEL_CONFIG := cyanogenmod_deathly_chagallltetmo_defconfig
+TARGET_KERNEL_SOURCE := kernel/samsung/exynos5420
 
 # Charging mode
 BOARD_CHARGER_ENABLE_SUSPEND := true
@@ -100,7 +100,7 @@ BOARD_USES_HWC_SERVICES := true
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 
 # Hardware
-BOARD_HARDWARE_CLASS += device/samsung/chagalllte/cmhw
+BOARD_HARDWARE_CLASS += device/samsung/chagallltetmo/cmhw
 BOARD_HARDWARE_CLASS += hardware/samsung/cmhw
 
 # Keymaster
@@ -162,7 +162,7 @@ BOARD_USES_GSC_VIDEO := true
 
 # SELinux
 BOARD_SEPOLICY_DIRS += \
-    device/samsung/chagalllte/sepolicy
+    device/samsung/chagallltetmo/sepolicy
 
 # Sensors
 # TARGET_NO_SENSOR_PERMISSION_CHECK := true
@@ -188,7 +188,7 @@ WIFI_DRIVER_NVRAM_PATH_PARAM     := "/sys/module/dhd/parameters/nvram_path"
 WIFI_DRIVER_NVRAM_PATH           := "/system/etc/wifi/nvram_net.txt"
 
 # custom additions to updater-script
-TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := device/samsung/chagalllte/releasetools/ota_from_target_files
+TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := device/samsung/chagallltetmo/releasetools/ota_from_target_files
 
 # inherit from the proprietary version
--include vendor/samsung/chagalllte/BoardConfigVendor.mk
+-include vendor/samsung/chagallltetmo/BoardConfigVendor.mk
