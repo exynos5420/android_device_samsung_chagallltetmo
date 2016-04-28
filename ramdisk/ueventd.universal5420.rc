@@ -72,14 +72,16 @@
 # vfs
 /dev/vfsspi               0660   system     system
 
+#RIL
+/dev/block/mmcblk0p13     0660   system     radio
+/dev/umts*                0660   system     radio
+
 # USB Driver
 /dev/ttyUSB*              0660   system     usb
 /dev/usb/lp*              0660   system     usb
 /dev/ttyUSB0              0660   system     radio
 
-#RIL
-/dev/block/mmcblk0p13     0660   system     radio
-/dev/umts*                0660   system     radio
+/dev/block/mmcblk0p8      0660   system     system
 
 # MDM 9x25
 /dev/block/mmcblk0p4      0660   system     radio
