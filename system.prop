@@ -17,3 +17,7 @@ ro.ril.gprsclass=10
 ro.ril.hsxpa=1
 ro.sec.fle.encryption=true
 ro.secwvk=220
+
+# T-Mobile App Support
+ro.com.google.clientidbase.ms=android-hms-tmobile-us
+ro.com.google.clientidbase.am=android-tmobile-us
