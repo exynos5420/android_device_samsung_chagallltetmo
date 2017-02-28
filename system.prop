@@ -11,3 +11,7 @@ rild.libargs=-d /dev/ttyS0
 ro.telephony.default_network=9
 ro.telephony.ril_class=SlteRIL
 ro.ril.telephony.mqanelements=6
+
+# T-Mobile App Support
+ro.com.google.clientidbase.ms=android-hms-tmobile-us
+ro.com.google.clientidbase.am=android-tmobile-us
