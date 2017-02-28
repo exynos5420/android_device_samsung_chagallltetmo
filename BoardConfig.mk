@@ -59,8 +59,5 @@ BOARD_SEPOLICY_DIRS += $(LOCAL_PATH)/sepolicy
 # Cyanogen Hardware
 BOARD_HARDWARE_CLASS := $(COMMON_PATH)/cmhw
 
-# custom additions to updater-script
-TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := device/samsung/chagallltetmo/releasetools/ota_from_target_files
-
 # Inherit from exynos5420-common
 include device/samsung/exynos5420-common/BoardConfigCommon.mk
