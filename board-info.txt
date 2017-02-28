@@ -1,1 +1,1 @@
-require version-bootloader=T807TUVS1BOL1
+require version-bootloader=T807TUVS1BPL2
