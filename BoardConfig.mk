@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/samsung/chagalllte
+LOCAL_PATH := device/samsung/chagallltetmo
 
 # Platform
 BOARD_VENDOR := samsung
@@ -35,7 +35,7 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
 TARGET_OTA_ASSERT_DEVICE := chagalllte
 
 # Kernel
-TARGET_KERNEL_CONFIG := lineageos_deathly_chagalllte_defconfig
+TARGET_KERNEL_CONFIG := lineageos_deathly_chagallltetmo_defconfig
 BOARD_CUSTOM_BOOTIMG := true
 
 # Include path
@@ -58,7 +58,7 @@ BOARD_SEPOLICY_DIRS += device/samsung/exynos5420-common/sepolicy
 BOARD_SEPOLICY_DIRS += device/samsung/chagalllte/sepolicy
 
 # custom additions to updater-script
-TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := device/samsung/chagalllte/releasetools/ota_from_target_files
+TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := device/samsung/chagallltetmo/releasetools/ota_from_target_files
 
 # Cyanogen Hardware
 BOARD_HARDWARE_CLASS := $(COMMON_PATH)/cmhw
