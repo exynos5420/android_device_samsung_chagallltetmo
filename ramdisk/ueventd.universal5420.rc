@@ -77,7 +77,10 @@
 /dev/usb/lp*              0660   system     usb
 /dev/ttyUSB0              0660   system     radio
 
-#RIL
+# Misc
+/dev/block/mmcblk0p8      0660   system     system
+
+# RIL
 /dev/block/mmcblk0p13     0660   system     radio
 /dev/umts*                0660   system     radio
 
