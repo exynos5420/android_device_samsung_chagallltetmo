@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/samsung/chagalllte
+LOCAL_PATH := device/samsung/chagallltetmo
 
 PRODUCT_CHARACTERISTICS := tablet
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
@@ -94,7 +94,7 @@ $(call inherit-product, frameworks/native/build/phone-xxhdpi-3072-dalvik-heap.mk
 $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-3072-hwui-memory.mk)
 
 # call the proprietary setup
-$(call inherit-product, vendor/samsung/chagalllte/chagalllte-vendor.mk)
+$(call inherit-product, vendor/samsung/chagallltetmo/chagallltetmo-vendor.mk)
 
 # Import the common tree changes
 include device/samsung/exynos5420-common/exynos5420.mk
