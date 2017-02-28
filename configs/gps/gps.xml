@@ -12,25 +12,40 @@
 
     WakeLock="geo"
 
+    TISEnabled="false"
+    TcpConnectionTimeout="20"
     LPmode="false"
     CpColdStart="false"
     CpGuardTimeSec="1"
     ReAidingOnHotStart="false"
+    ReAidingIntervalSec="7200"
+    AutoSUPLVersionForNI="false"
+    SuplSslMethod="SSLv23_NO_TLSv1_2"
     SuplEnable="true"
-    SuplUseApn="false"
+    SuplMsbCapable="true"
+    SuplMsaCapable="true"
+    SuplEcidCapable="true"
+    SuplUseApn="true"
+    UseEcidEarfcn="false"
     SuplTlsCertPath="/system/bin/gps.cer"
     SuplUT1Seconds="20"
     SuplUT2Seconds="20"
     SuplUT3Seconds="20"
-    SuplVersion="1"
+    SuplVersion="2"
+    SuplHmacHash="SHA1"
+    SuplLppCapable="false"
+    SuplUseFwDns="true"
 
-    LbsEnable="true"
+    LbsEnable="false"
     LbsServer="BCMLS2.glpals.com"
     HttpSyncLto="true"
     LbsCellEnable="false"
+    LbsWlanEnable="false"
+    RtiEnable="false"
     LtoDir="/data/system/gps/"
-    LtoSyncThresholdDays="1"
+    LtoSyncThresholdDays="3"
 
+    HulaEnable="false"
     IgnoreJniTime="true"
     AssertEnabled="false"
    />
@@ -47,6 +62,7 @@
 
   <gll_features
        EnableLowPowerPmm="true"
+       EnableBeidou="false"
   />
 
 </glgps>
