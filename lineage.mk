@@ -23,5 +23,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=chagallltetmo \
     PRODUCT_DEVICE=chagallltetmo \
     TARGET_DEVICE=chagallltetmo \
-    BUILD_FINGERPRINT=samsung/chagallltetmo/chagallltetmo:5.0.2/LRX22G/T807TUVS1BOL1:user/release-keys \
-    PRIVATE_BUILD_DESC="chagallltetmo-user 5.0.2 LRX22G T807TUVS1BOL1 release-keys"
+    BUILD_FINGERPRINT=samsung/chagallltetmo/chagallltetmo:5.0.2/LRX22G/T807TUVS1BPL2:user/release-keys \
+    PRIVATE_BUILD_DESC="chagallltetmo-user 5.0.2 LRX22G T807TUVS1BPL2 release-keys"
