@@ -35,8 +35,8 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
 TARGET_OTA_ASSERT_DEVICE := chagalllte
 
 # Releasetools
-TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/klimtwifi/releasetools
-TARGET_BOARD_INFO_FILE ?= device/samsung/klimtwifi/board-info.txt
+TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/chagallltetmo/releasetools
+TARGET_BOARD_INFO_FILE ?= device/samsung/chagallltetmo/board-info.txt
 
 # Kernel
 TARGET_KERNEL_CONFIG := lineageos_deathly_chagallltetmo_defconfig
