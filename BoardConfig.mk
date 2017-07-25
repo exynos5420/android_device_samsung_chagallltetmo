@@ -36,6 +36,7 @@ TARGET_OTA_ASSERT_DEVICE := chagalllte
 
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/chagallltetmo/releasetools
+TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := device/samsung/chagalllte/releasetools/ota_from_target_files
 TARGET_BOARD_INFO_FILE ?= device/samsung/chagallltetmo/board-info.txt
 
 # Kernel
