@@ -54,9 +54,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps/gps.conf:system/etc/gps.conf \
     $(LOCAL_PATH)/configs/gps/gps.xml:system/etc/gps.xml
 
-# Shim
+# GPS Shim
 PRODUCT_PACKAGES += \
-    libshim
+    libdmitry
 
 PRODUCT_PROPERTY_OVERRIDES += \
     keyguard.no_require_sim=true \
