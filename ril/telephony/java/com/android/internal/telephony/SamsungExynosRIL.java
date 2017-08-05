@@ -52,6 +52,7 @@ public class SamsungExynosRIL extends RIL {
      **********************************************************/
     private static final int SAMSUNG_UNSOL_RESPONSE_BASE = 11000;
     private static final int RIL_UNSOL_STK_SEND_SMS_RESULT = 11002;
+    private static final int RIL_UNSOL_GPS_NOTI = 11009;
     private static final int RIL_UNSOL_AM = 11010;
     private static final int RIL_UNSOL_DUN_PIN_CONTROL_SIGNAL = 11011;
     private static final int RIL_UNSOL_SIM_SWAP_STATE_CHANGED = 11057;
@@ -285,6 +286,9 @@ public class SamsungExynosRIL extends RIL {
                 switch (response) {
                     case RIL_UNSOL_STK_SEND_SMS_RESULT:
                         ret = responseInts(p);
+                        break;
+                    case RIL_UNSOL_GPS_NOTI:
+                        ret = responseVoid(p);
                         break;
                     case RIL_UNSOL_AM:
                         ret = responseString(p);
