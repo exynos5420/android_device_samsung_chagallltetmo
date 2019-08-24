@@ -23,11 +23,9 @@ LOCAL_SRC_FILES := $(call all-java-files-under, src)
 LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res
 LOCAL_AAPT_FLAGS := --auto-add-overlay
 
-LOCAL_PROGUARD_FLAG_FILES := proguard.flags
-
 LOCAL_CERTIFICATE := platform
 LOCAL_PRIVILEGED_MODULE := true
-
-LOCAL_JACK_ENABLED := disabled
+LOCAL_PROGUARD_FLAG_FILES := proguard.flags
+LOCAL_PRIVATE_PLATFORM_APIS := true
 
 include $(BUILD_PACKAGE)
