@@ -63,8 +63,8 @@ BOARD_FLASH_BLOCK_SIZE := 4096
 BOARD_SEPOLICY_DIRS += device/samsung/exynos5420-common/sepolicy
 BOARD_SEPOLICY_DIRS += device/samsung/chagalllte/sepolicy
 
-# Cyanogen Hardware
-BOARD_HARDWARE_CLASS := $(COMMON_PATH)/cmhw
+# Lineage Hardware
+BOARD_HARDWARE_CLASS := $(COMMON_PATH)/lineagehw
 
 # Audio
 TARGET_AUDIOHAL_VARIANT := samsung

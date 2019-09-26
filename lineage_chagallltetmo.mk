@@ -25,11 +25,11 @@ PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_MODEL := SM-T807T
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
+# Inherit common LineageOS stuff.
+$(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
 
-# Inherit more LineageOS stuff.
-$(call inherit-product, vendor/cm/config/data_only.mk)
+# Inherit data only LineageOS stuff.
+$(call inherit-product, vendor/lineage/config/data_only.mk)
 
 PRODUCT_NAME := lineage_chagallltetmo
 PRODUCT_DEVICE := chagallltetmo
