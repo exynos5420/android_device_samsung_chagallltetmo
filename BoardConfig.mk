@@ -40,7 +40,7 @@ TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := device/samsung/chagalllte/releaseto
 TARGET_BOARD_INFO_FILE ?= device/samsung/chagallltetmo/board-info.txt
 
 # Kernel
-TARGET_KERNEL_CONFIG := lineageos_deathly_chagallltetmo_defconfig
+TARGET_KERNEL_CONFIG := lineageos_chagallltetmo_defconfig
 BOARD_CUSTOM_BOOTIMG := true
 
 # Include path
